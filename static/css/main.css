@@ -1,0 +1,718 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,800,900&display=swap");
+.header {
+  background: url(../images/home.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.header .section-overlay {
+  background-color: rgba(33, 33, 33, 0.75);
+  height: 100vh;
+}
+
+.navbar {
+  margin-top: 0;
+  background-color: rgba(56, 56, 56, 0.7);
+  opacity: 1;
+}
+
+.navbar .navbar-brand img {
+  height: 35px;
+  width: 80px;
+}
+
+.navbar .navbar-nav li a {
+  text-decoration: none;
+  color: #b5b5b5;
+}
+
+/*homepage*/
+.home-container {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.home-container .logo {
+  padding-bottom: 50px;
+}
+
+.home-container .logo img {
+  vertical-align: center;
+  text-align: center;
+  height: 55px;
+  width: 125px;
+}
+
+.home-container .home-text h1 {
+  font-family: Raleway, sans-serif;
+  font-size: 35px;
+  color: white;
+  font-weight: 300;
+  padding-top: 30px;
+  line-height: 35px;
+}
+
+.home-container .home-text p {
+  font-family: Raleway, sans-serif;
+  font-size: 17px;
+  color: white;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 28px;
+}
+
+.home-container div.download-btn {
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+
+.home-container div.download-btn a.btn-primary {
+  color: #f39c12;
+  background: none;
+  border: 1px solid #f39c12;
+}
+
+.home-container div.download-btn a > i {
+  padding-left: 10px;
+}
+
+.home-container .home-phone img {
+  width: 262px;
+  height: 535px;
+}
+
+/*About page*/
+.about-page {
+  background: #f1f1f1;
+}
+
+.about-page .about-title {
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+
+.about-page .about-title h2 {
+  font-family: Raleway, sans-serif;
+  font-size: 30px;
+  color: #333;
+  font-weight: 400;
+}
+
+.about-page .about-title h2::after {
+  content: "";
+  display: block;
+  margin: 20px auto;
+  width: 60px;
+  height: 2px;
+  background-color: #f39c12;
+}
+
+.about-page .about-title p {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  color: #333;
+  font-weight: 300;
+  line-height: 28px;
+  margin-top: 45px;
+}
+
+.about-page .inner_about {
+  padding-top: 50px;
+}
+
+.about-page .inner_about .inner_about_title {
+  padding-bottom: 50px;
+}
+
+.about-page .inner_about .inner_about_title h2 {
+  font-family: Raleway, sans-serif;
+  font-size: 30px;
+  color: #333333;
+  font-weight: 800;
+  line-height: 37px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.about-page .inner_about .inner_about_title h2::after {
+  content: "";
+  display: block;
+  margin-top: 12px;
+  width: 70px;
+  height: 2px;
+  background-color: #f39c12;
+}
+
+.about-page .inner_about .inner_about_title p {
+  font-family: Raleway, sans-serif;
+  font-size: 19px;
+  color: #333333;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 1rem;
+  margin-top: 40px;
+}
+
+.about-page .inner_about .inner-about-desc .inner-about-point {
+  margin-top: 20px;
+}
+
+.about-page .inner_about .inner-about-desc .inner-about-point .icon i {
+  font-size: 55px;
+  color: #BABABA;
+  margin-right: 25px;
+}
+
+.about-page .inner_about .inner-about-desc .inner-about-point .inner-about-point-text h2 {
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  color: #343434;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.about-page .inner_about .inner-about-desc .inner-about-point .inner-about-point-text p {
+  font-family: Raleway, sans-serif;
+  font-size: 15px;
+  color: #727272;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.about-page .video-area {
+  padding-top: 120px;
+  padding-bottom: 140px;
+  background: #e4e4e4;
+}
+
+.about-page .video-area .video-area-title h2 {
+  font-family: Raleway, sans-serif;
+  font-size: 30px;
+  color: #333333;
+  font-weight: 800;
+  line-height: 37px;
+  margin-bottom: 10px;
+}
+
+.about-page .video-area .video-area-title h2::after {
+  content: "";
+  display: block;
+  margin-top: 12px;
+  width: 70px;
+  height: 2px;
+  background-color: #f39c12;
+}
+
+.about-page .video-area .video-area-title p {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  color: #333333;
+  font-weight: 300;
+  line-height: 28px;
+  margin-bottom: 1rem;
+  margin-top: 40px;
+}
+
+.about-page .video-area .video-area-button .btn {
+  border: 1px solid #929292;
+  background: #e4e4e4;
+  border-radius: 3px;
+  padding: 12px 35px;
+  text-transform: uppercase;
+}
+
+/*Testimonial*/
+.testimonial {
+  background: url("/static/images/testimonial.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed !important;
+  background-position: 50%;
+}
+
+.testimonial .section-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.testimonial .section-overlay .carousel-inner .carousel-item {
+  padding-bottom: 70px;
+}
+
+.testimonial .section-overlay .carousel-inner .carousel-item img {
+  padding: 3px;
+  border-radius: 50%;
+  border: 2px solid #f39c12;
+  width: 134px;
+  height: 134px;
+}
+
+.testimonial .section-overlay .carousel-inner .carousel-item h2 {
+  font-family: Raleway, sans-serif;
+  font-size: 30px;
+  color: #f39c12;
+  font-weight: 900;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.testimonial .section-overlay .carousel-inner .carousel-item h4 {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  color: #d8d8d8;
+  font-weight: 500;
+  margin: 10px 0;
+  font-style: italic;
+}
+
+.testimonial .section-overlay .carousel-inner .carousel-item h4 span {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  color: #f39c12;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.testimonial .section-overlay .carousel-inner .carousel-item p {
+  padding-top: 50px;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  color: #d8d8d8;
+  font-weight: 300;
+  line-height: 27px;
+}
+
+.testimonial .section-overlay .carousel-indicators .active {
+  background: #f39c12;
+}
+
+.testimonial .section-overlay .carousel-indicators li {
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #f39c12;
+  background: none;
+  margin: 1px;
+}
+
+#features {
+  background-color: #f1f1f1;
+}
+
+#features .features-title {
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+
+#features .features-title h2 {
+  font-family: Raleway, sans-serif;
+  font-size: 30px;
+  color: #333;
+  font-weight: 400;
+}
+
+#features .features-title h2::after {
+  content: "";
+  display: block;
+  margin: 20px auto;
+  width: 60px;
+  height: 2px;
+  background-color: #f39c12;
+}
+
+#features .features-title p {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  color: #333;
+  font-weight: 300;
+  line-height: 28px;
+  margin-top: 45px;
+}
+
+#features .features-inner {
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+#features .features-inner h3 {
+  text-transform: uppercase;
+  font-family: Raleway, sans-serif;
+  font-size: 25px;
+  color: #333;
+  font-weight: 700;
+}
+
+#features .features-inner p {
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  color: #333;
+  font-weight: 300;
+}
+
+#features .features-inner span {
+  color: #f39c12;
+}
+
+#features .features-inner .features-inner-left {
+  margin-top: 35px;
+}
+
+#features .features-inner .features-inner-left .icon i {
+  font-size: 41px;
+  color: #f39c12;
+  margin-left: 25px;
+}
+
+#features .features-inner .features-inner-right {
+  margin-top: 35px;
+}
+
+#features .features-inner .features-inner-right .icon i {
+  font-size: 41px;
+  color: #f39c12;
+  margin-right: 25px;
+}
+
+#features .call-to-action {
+  padding: 100px 0;
+  background: #1a1a1a;
+}
+
+#features .call-to-action p {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  color: #dfdfdf;
+  font-weight: 300;
+}
+
+#features .apps-screen-page .screenshots-title {
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+
+#features .apps-screen-page .screenshots-title h2 {
+  font-family: Raleway, sans-serif;
+  font-size: 30px;
+  color: #333;
+  font-weight: 400;
+}
+
+#features .apps-screen-page .screenshots-title h2::after {
+  content: "";
+  display: block;
+  margin: 20px auto;
+  width: 60px;
+  height: 2px;
+  background-color: #f39c12;
+}
+
+#features .apps-screen-page .screenshots-title p {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  color: #333;
+  font-weight: 300;
+  line-height: 28px;
+  margin-top: 45px;
+}
+
+#features .apps-screen-page .screen-slider {
+  padding-top: 50px;
+}
+
+#features .apps-screen-page .screen-slider .owl-wrapper .owl-wrapper-item {
+  margin: 0 90px 50px 90px;
+}
+
+#features .apps-screen-page .screen-slider .owl-wrapper .owl-wrapper-item img {
+  width: 100%;
+  height: auto;
+}
+
+.facts {
+  background: url("../images/fun_bg.jpg");
+}
+
+.facts .section_overlay {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.facts .section_overlay .facts-item i {
+  color: #f39c12;
+  font-size: 60px;
+}
+
+.facts .section_overlay .facts-item h2 {
+  font-family: Raleway, sans-serif;
+  font-size: 35px;
+  color: #D7DADB;
+  font-weight: 400;
+  margin-top: 15px;
+  margin-bottom: 1px;
+}
+
+.facts .section_overlay .facts-item p {
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  color: #D7DADB;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.download-page {
+  background: #f1f1f1;
+}
+
+.download-page .download-page-title {
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+
+.download-page .download-page-title h2 {
+  font-family: Raleway, sans-serif;
+  font-size: 30px;
+  color: #333;
+  font-weight: 400;
+}
+
+.download-page .download-page-title h2::after {
+  content: "";
+  display: block;
+  margin: 20px auto;
+  width: 60px;
+  height: 2px;
+  background-color: #f39c12;
+}
+
+.download-page .download-page-title p {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  color: #333;
+  font-weight: 300;
+  line-height: 28px;
+  margin-top: 45px;
+}
+
+.download-page .available_store {
+  background: #1a1a1a;
+  padding: 75px 0;
+}
+
+.download-page .available_store .available_store_text h2 {
+  font-family: Raleway, sans-serif;
+  font-size: 30px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.download-page .available_store .available_store_text p {
+  font-family: Raleway, sans-serif;
+  font-size: 14px;
+  color: #b5b5b5;
+  font-weight: 500;
+}
+
+.download-page .available_store i {
+  color: #f39c12;
+  font-size: 40px;
+}
+
+.contact-page {
+  background: #f1f1f1;
+}
+
+.contact-page .contact-page-title {
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+
+.contact-page .contact-page-title h2 {
+  font-family: Raleway, sans-serif;
+  font-size: 30px;
+  color: #333;
+  font-weight: 400;
+}
+
+.contact-page .contact-page-title h2::after {
+  content: "";
+  display: block;
+  margin: 20px auto;
+  width: 60px;
+  height: 2px;
+  background-color: #f39c12;
+}
+
+.contact-page .contact-page-title p {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  color: #333;
+  font-weight: 300;
+  line-height: 28px;
+  margin-top: 45px;
+}
+
+.contact-page .contact-form .form-control {
+  height: 50px;
+  font-family: Raleway, sans-serif;
+  font-size: 14px;
+  color: #333;
+  font-weight: 300;
+  margin-bottom: 15px;
+  background-color: transparent;
+}
+
+.contact-page .contact-form #message {
+  resize: none;
+  height: 117px;
+}
+
+.contact-page .contact-form .submit-btn {
+  background-color: transparent;
+  border: 1px solid #f39c12;
+  border-radius: 4px;
+  width: 100%;
+  height: 50px;
+  text-transform: uppercase;
+  color: #f39c12;
+}
+
+.contact-page .social-media {
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+.contact-page .social-media .social-media-list {
+  text-align: center;
+}
+
+.contact-page .social-media .social-media-list li {
+  list-style: none;
+  display: inline;
+  padding-left: 10px;
+}
+
+.contact-page .social-media .social-media-list li a {
+  text-decoration: none;
+  border: 1px solid #9d9d9d;
+  border-radius: 3px;
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  line-height: 49px;
+  text-align: center;
+  color: #9d9d9d;
+}
+
+.contact-page .social-media .social-media-list li a i {
+  font-size: 20px;
+}
+
+.subscribe {
+  background-image: url(../images/subscribe.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.subscribe .overlay {
+  padding-bottom: 70px;
+  background: transparent;
+}
+
+.subscribe .subscribe-title {
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+
+.subscribe .subscribe-title h2 {
+  font-family: Raleway, sans-serif;
+  font-size: 30px;
+  color: #eaeaea;
+  font-weight: 400;
+}
+
+.subscribe .subscribe-title h2::after {
+  content: "";
+  display: block;
+  margin: 20px auto;
+  width: 60px;
+  height: 2px;
+  background-color: #f39c12;
+}
+
+.subscribe .subscribe-title p {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  color: #a4a4a4;
+  font-weight: 300;
+  line-height: 28px;
+  margin-top: 45px;
+}
+
+.subscribe .subscribe-form .form-control {
+  background: transparent;
+  height: 50px;
+  width: 100%;
+  font-family: Raleway, sans-serif;
+  font-size: 14px;
+  color: #333;
+  font-weight: 300;
+  margin-bottom: 15px;
+  background-color: transparent;
+  border: 1px solid #575b63;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  color: #aeaeae;
+}
+
+.subscribe .submit-btn {
+  background-color: transparent;
+  border: 1px solid #f39c12;
+  border-radius: 4px;
+  width: 200px;
+  height: 45px;
+  text-transform: uppercase;
+  color: #f39c12;
+}
+
+.subscribe .submit-btn:hover {
+  color: #fff;
+  background-color: #f39c12;
+}
+
+.copyright {
+  background: #1A1D22;
+  padding-bottom: 65px;
+  padding-top: 65px;
+  border-bottom: 3px solid #f39c12;
+}
+
+.copyright .copyright-text {
+  font-family: Raleway, sans-serif;
+  font-size: 15px;
+  color: #8C8B8A;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.copyright .copyright-text a {
+  color: #f39c12;
+}
+
+.copyright .scroll-top a {
+  background: #f39c12;
+  padding: 25px;
+}
+
+.copyright .scroll-top a i {
+  color: #fff;
+  font-size: 25px;
+}
+/*# sourceMappingURL=main.css.map */

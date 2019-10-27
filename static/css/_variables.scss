@@ -1,0 +1,48 @@
+@import './_fonts';
+
+@mixin headingFont($color, $fontSize){
+    font-family: Raleway, sans-serif;
+    font-size:$fontSize;
+    color:$color;
+    font-weight:300;
+
+}
+
+@mixin headingFont400($color, $fontSize){
+    font-family: Raleway, sans-serif;
+    font-size:$fontSize;
+    color:$color;
+    font-weight:400;
+
+}
+
+@mixin headingFont500($color, $fontSize){
+    font-family: Raleway, sans-serif;
+    font-size:$fontSize;
+    color:$color;
+    font-weight:500;
+
+}
+@mixin headingFont700($color, $fontSize){
+    font-family: Raleway, sans-serif;
+    font-size:$fontSize;
+    color:$color;
+    font-weight:700;
+
+}
+@mixin headingFont800($color, $fontSize){
+    font-family: Raleway, sans-serif;
+    font-size:$fontSize;
+    color:$color;
+    font-weight:800;
+
+}
+
+@mixin headingFont900($color, $fontSize){
+    font-family: Raleway, sans-serif;
+    font-size:$fontSize;
+    color:$color;
+    font-weight:900;
+
+}
+
