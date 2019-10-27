@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,800,900&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900&display=swap");
 .header {
   background: url(../images/home.jpg);
   background-size: cover;
@@ -84,24 +84,19 @@
   height: 535px;
 }
 
-/*About page*/
-.about-page {
-  background: #f1f1f1;
-}
-
-.about-page .about-title {
+.title {
   padding-top: 90px;
   padding-bottom: 50px;
 }
 
-.about-page .about-title h2 {
+.title h2 {
   font-family: Raleway, sans-serif;
   font-size: 30px;
   color: #333;
   font-weight: 400;
 }
 
-.about-page .about-title h2::after {
+.title h2::after {
   content: "";
   display: block;
   margin: 20px auto;
@@ -110,13 +105,18 @@
   background-color: #f39c12;
 }
 
-.about-page .about-title p {
+.title p {
   font-family: Raleway, sans-serif;
   font-size: 18px;
   color: #333;
   font-weight: 300;
   line-height: 28px;
   margin-top: 45px;
+}
+
+/*About page*/
+.about-page {
+  background: #f1f1f1;
 }
 
 .about-page .inner_about {
@@ -304,36 +304,6 @@
   background-color: #f1f1f1;
 }
 
-#features .features-title {
-  padding-top: 90px;
-  padding-bottom: 50px;
-}
-
-#features .features-title h2 {
-  font-family: Raleway, sans-serif;
-  font-size: 30px;
-  color: #333;
-  font-weight: 400;
-}
-
-#features .features-title h2::after {
-  content: "";
-  display: block;
-  margin: 20px auto;
-  width: 60px;
-  height: 2px;
-  background-color: #f39c12;
-}
-
-#features .features-title p {
-  font-family: Raleway, sans-serif;
-  font-size: 18px;
-  color: #333;
-  font-weight: 300;
-  line-height: 28px;
-  margin-top: 45px;
-}
-
 #features .features-inner {
   padding-top: 30px;
   padding-bottom: 70px;
@@ -390,36 +360,6 @@
   font-weight: 300;
 }
 
-#features .apps-screen-page .screenshots-title {
-  padding-top: 90px;
-  padding-bottom: 50px;
-}
-
-#features .apps-screen-page .screenshots-title h2 {
-  font-family: Raleway, sans-serif;
-  font-size: 30px;
-  color: #333;
-  font-weight: 400;
-}
-
-#features .apps-screen-page .screenshots-title h2::after {
-  content: "";
-  display: block;
-  margin: 20px auto;
-  width: 60px;
-  height: 2px;
-  background-color: #f39c12;
-}
-
-#features .apps-screen-page .screenshots-title p {
-  font-family: Raleway, sans-serif;
-  font-size: 18px;
-  color: #333;
-  font-weight: 300;
-  line-height: 28px;
-  margin-top: 45px;
-}
-
 #features .apps-screen-page .screen-slider {
   padding-top: 50px;
 }
@@ -469,36 +409,6 @@
   background: #f1f1f1;
 }
 
-.download-page .download-page-title {
-  padding-top: 90px;
-  padding-bottom: 50px;
-}
-
-.download-page .download-page-title h2 {
-  font-family: Raleway, sans-serif;
-  font-size: 30px;
-  color: #333;
-  font-weight: 400;
-}
-
-.download-page .download-page-title h2::after {
-  content: "";
-  display: block;
-  margin: 20px auto;
-  width: 60px;
-  height: 2px;
-  background-color: #f39c12;
-}
-
-.download-page .download-page-title p {
-  font-family: Raleway, sans-serif;
-  font-size: 18px;
-  color: #333;
-  font-weight: 300;
-  line-height: 28px;
-  margin-top: 45px;
-}
-
 .download-page .available_store {
   background: #1a1a1a;
   padding: 75px 0;
@@ -525,36 +435,6 @@
 
 .contact-page {
   background: #f1f1f1;
-}
-
-.contact-page .contact-page-title {
-  padding-top: 90px;
-  padding-bottom: 50px;
-}
-
-.contact-page .contact-page-title h2 {
-  font-family: Raleway, sans-serif;
-  font-size: 30px;
-  color: #333;
-  font-weight: 400;
-}
-
-.contact-page .contact-page-title h2::after {
-  content: "";
-  display: block;
-  margin: 20px auto;
-  width: 60px;
-  height: 2px;
-  background-color: #f39c12;
-}
-
-.contact-page .contact-page-title p {
-  font-family: Raleway, sans-serif;
-  font-size: 18px;
-  color: #333;
-  font-weight: 300;
-  line-height: 28px;
-  margin-top: 45px;
 }
 
 .contact-page .contact-form .form-control {

@@ -2,6 +2,8 @@
 @import './_variables';
 
 
+
+
 .header{
     background:url(../images/home.jpg);
     background-size: cover;
@@ -53,11 +55,11 @@
     }
     .home-text{
         h1{        
-            @include headingFont(white, 35px);
+            @include headingFont(white, 35px,300);
         padding-top:30px;
         line-height:35px;}
         p{
-            @include headingFont(white, 17px);
+            @include headingFont(white, 17px,300);
             margin-top:0;
             margin-bottom:10px;
             line-height:28px;
@@ -82,17 +84,11 @@
     }
 
 }
-
-/*About page*/
-
-.about-page{
-    background:#f1f1f1;
-    
-    .about-title{
+.title{
         padding-top:90px;
         padding-bottom:50px;
         h2{
-            @include headingFont400(#333, 30px);
+            @include headingFont(#333, 30px,400);
             &::after{
                 content:"";
                 display: block;
@@ -103,17 +99,23 @@
             }
         }
         p{
-            @include headingFont(#333, 18px);
+            @include headingFont(#333, 18px, 300);
             line-height:28px;
             margin-top:45px;
         }
     }
+/*About page*/
+
+.about-page{
+    background:#f1f1f1;
+    
+    
     .inner_about{
         padding-top:50px;
         .inner_about_title{
             padding-bottom:50px;
             h2{
-                @include headingFont800(rgb(51,51,51), 30px);
+                @include headingFont(rgb(51,51,51), 30px, 800);
                 line-height:37px;
                 margin-top:20px;
                 margin-bottom:10px;
@@ -127,7 +129,7 @@
                 }
             }
             p{
-                @include headingFont(rgb(51,51,51), 19px);
+                @include headingFont(rgb(51,51,51), 19px, 300);
                 line-height:24px;
                 margin-bottom:1rem;
                 margin-top:40px;
@@ -145,11 +147,11 @@
             }
         .inner-about-point-text{
             h2{
-                @include headingFont800(rgb(52,52,52), 20px);
+                @include headingFont(rgb(52,52,52), 20px, 800);
                 text-transform:uppercase;
             }
             p{
-                @include headingFont(#727272, 15px);
+                @include headingFont(#727272, 15px, 300);
                 margin-bottom:10px;
             }
         }
@@ -162,9 +164,8 @@
         background:#e4e4e4;
         .video-area-title{
             h2{
-            @include headingFont800(rgb(51,51,51), 30px);
+            @include headingFont(rgb(51,51,51), 30px, 800);
             line-height:37px;
-            
             margin-bottom:10px;
             &::after{
                 content:"";
@@ -176,7 +177,7 @@
                 }
             }
             p{
-                @include headingFont(rgb(51,51,51), 18px);
+                @include headingFont(rgb(51,51,51), 18px, 300);
                 line-height:28px;
                 margin-bottom:1rem;
                 margin-top:40px;
@@ -220,23 +221,23 @@
                     height:134px;
                 }
                 h2{
-                    @include headingFont900(#f39c12, 30px);
+                    @include headingFont(#f39c12, 30px, 900);
                     margin-top: 25px;
                     margin-bottom: 10px;
                     text-transform:uppercase;
                 }
                 h4{
-                    @include headingFont500(#d8d8d8, 18px);
+                    @include headingFont(#d8d8d8, 18px, 500);
                     margin: 10px 0;
                     font-style:italic;
                     span{
-                        @include headingFont500(#f39c12, 18px);
+                        @include headingFont(#f39c12, 18px, 500);
                         font-style:normal;
                     }
                 }
                 p{
                     padding-top: 50px;
-                    @include headingFont(#d8d8d8, 18px);
+                    @include headingFont(#d8d8d8, 18px, 300);
                     line-height:27px;
 
                 }
@@ -262,35 +263,15 @@
 }
 #features{
     background-color: #f1f1f1;
-    .features-title{
-        padding-top:90px;
-        padding-bottom:50px;
-        h2{
-            @include headingFont400(#333, 30px);
-            &::after{
-                content:"";
-                display: block;
-                margin:20px auto;
-                width:60px;
-                height:2px;
-                background-color: #f39c12;
-            }
-        }
-        p{
-            @include headingFont(#333, 18px);
-            line-height:28px;
-            margin-top:45px;
-        }
-    }
     .features-inner{
         padding-top: 30px;
         padding-bottom: 70px;
         h3{
             text-transform: uppercase;
-            @include headingFont700(#333, 25px);
+            @include headingFont(#333, 25px, 700);
         }
         p{
-            @include headingFont(#333, 16px);
+            @include headingFont(#333, 16px, 300);
         }
         span{
             color:#f39c12;
@@ -321,31 +302,11 @@
         padding: 100px 0;
         background:#1a1a1a;
         p{
-            @include headingFont(#dfdfdf, 18px);
+            @include headingFont(#dfdfdf, 18px, 300);
         }
 
     }
     .apps-screen-page{
-        .screenshots-title{
-            padding-top:90px;
-            padding-bottom:50px;
-            h2{
-                @include headingFont400(#333, 30px);
-                &::after{
-                    content:"";
-                    display: block;
-                    margin:20px auto;
-                    width:60px;
-                    height:2px;
-                    background-color: #f39c12;
-                }
-            }
-            p{
-                @include headingFont(#333, 18px);
-                line-height:28px;
-                margin-top:45px;
-            }
-        }
         .screen-slider{
             padding-top: 50px;
             .owl-wrapper{
@@ -373,13 +334,13 @@
                 font-size:60px;
             }
             h2{
-                @include headingFont400(#D7DADB, 35px);
+                @include headingFont(#D7DADB, 35px, 400);
                 margin-top: 15px;
                 margin-bottom: 1px;
                 
             }
             p{
-                @include headingFont(#D7DADB, 20px);
+                @include headingFont(#D7DADB, 20px, 300);
                 text-transform:uppercase;
             }
         }
@@ -389,35 +350,15 @@
 
 .download-page{
     background:#f1f1f1;
-    .download-page-title{
-        padding-top:90px;
-        padding-bottom:50px;
-        h2{
-            @include headingFont400(#333, 30px);
-            &::after{
-                content:"";
-                display: block;
-                margin:20px auto;
-                width:60px;
-                height:2px;
-                background-color: #f39c12;
-            }
-        }
-        p{
-            @include headingFont(#333, 18px);
-            line-height:28px;
-            margin-top:45px;
-        }
-    }
     .available_store{
         background:#1a1a1a;
         padding: 75px 0;
         .available_store_text{
             h2{
-                @include headingFont500(#fff, 30px);
+                @include headingFont(#fff, 30px, 500);
             }
             p{
-                @include headingFont500(#b5b5b5, 14px);
+                @include headingFont(#b5b5b5, 14px, 500);
             }
         }
         i{
@@ -430,30 +371,10 @@
 
 .contact-page{
     background:#f1f1f1;
-    .contact-page-title{
-        padding-top:90px;
-        padding-bottom:50px;
-        h2{
-            @include headingFont400(#333, 30px);
-            &::after{
-                content:"";
-                display: block;
-                margin:20px auto;
-                width:60px;
-                height:2px;
-                background-color: #f39c12;
-            }
-        }
-        p{
-            @include headingFont(#333, 18px);
-            line-height:28px;
-            margin-top:45px;
-        }
-    }
     .contact-form{
         .form-control{
             height:50px;
-            @include headingFont(#333, 14px);
+            @include headingFont(#333, 14px, 300);
             margin-bottom: 15px;
             background-color: transparent;
         }
@@ -512,7 +433,7 @@
         padding-top:90px;
         padding-bottom:50px;
         h2{
-            @include headingFont400(#eaeaea, 30px);
+            @include headingFont(#eaeaea, 30px, 400);
             &::after{
                 content:"";
                 display: block;
@@ -523,7 +444,7 @@
             }
         }
         p{
-            @include headingFont(#a4a4a4, 18px);
+            @include headingFont(#a4a4a4, 18px, 300);
             line-height:28px;
             margin-top:45px;
         }
@@ -533,7 +454,7 @@
         background: transparent;
         height:50px;
         width:100%;
-        @include headingFont(#333, 14px);
+        @include headingFont(#333, 14px, 300);
         margin-bottom: 15px;
         background-color: transparent;
         border:1px solid #575b63;
@@ -565,7 +486,7 @@
     padding-top: 65px;
     border-bottom: 3px solid #f39c12;
     .copyright-text{
-        @include headingFont500(#8C8B8A, 15px);
+        @include headingFont(#8C8B8A, 15px, 500);
         text-transform: uppercase;
         a{
             color:#f39c12;
