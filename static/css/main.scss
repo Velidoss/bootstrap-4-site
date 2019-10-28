@@ -17,7 +17,106 @@
     }
 }
 
+@keyframes appearUpDown{
+    0%{
+        transform:translateY(-40px);
+        opacity: 0;
+    }
+    100%{
+        transform:translateY(0);
+        opacity:1;
+    }
+}
+@keyframes appearLeftRight{
+    0%{
+        transform:translateX(-40px);
+        opacity: 0;
+    }
+    100%{
+        transform:translateX(0);
+        opacity:1;
+    }
+}
 
+@keyframes appearRightLeft{
+    0%{
+        transform:translateX(40px);
+        opacity: 0;
+    }
+    100%{
+        transform:translateX(0);
+        opacity:1;
+    }
+}
+@keyframes appearDownUp{
+    0%{
+        transform:translateY(40px);
+        opacity: 0;
+    }
+    100%{
+        transform:translateY(0);
+        opacity:1;
+    }
+}
+
+@keyframes runFromLeft{
+    0%{
+        transform:translateX(-2000px);
+        opacity: 0;
+    }
+    100%{
+        transform:translateX(0);
+        opacity:1;
+    }
+}
+@keyframes runFromRight{
+    0%{
+        transform:translateX(2000px);
+        opacity: 0;
+    }
+    100%{
+        transform:translateX(0);
+        opacity:1;
+    }
+}
+
+@keyframes bounceIn{
+    0%{
+        opacity:0;
+        transform: scale(.3);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70%{
+        transform: scale(.9);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes lightSpeedIn{
+    0%{
+        transform: translateX(100%) skewX(-30deg);
+        opacity:0;
+    }
+    60%{
+        transform: translateX(-20%) skewX(30deg);
+        opacity:1;
+    }
+    80%{
+        transform: translateX(0%) skewX(-15deg);
+        opacity:1;
+    }
+    100%{
+        transform: translateX(0%) skewX(0deg);
+        opacity:1;
+    }
+}
+
+/*Титулка почти всех блоков*/
 .title{
         padding-top:90px;
         padding-bottom:50px;
@@ -38,6 +137,8 @@
             margin-top:45px;
         }
     }
+
+
 .header{
     background:url(../images/home.jpg);
     background-size: cover;
@@ -78,6 +179,7 @@
 .home-container{
     padding-top: 140px;
     padding-bottom:140px;
+    
     .logo{
         padding-bottom:50px;
         img{
@@ -110,6 +212,7 @@
                 text-transform: uppercase;
                 color:#f39c12;
                 transition:1s;
+                animation:appearLeftRight 1s ease-in-out;
                 &:hover{
                     color:#fff;
                     background-color:#f39c12;
@@ -122,6 +225,7 @@
                 text-transform: uppercase;
                 color:#929292;
                 transition:1s;
+                animation:appearRightLeft 1s ease-in-out;
                 i{color:#f39c12;}
                 &:hover{
                     color:#fff;
@@ -133,7 +237,7 @@
         }
     .home-phone img{
         width:100%;
-        
+        animation:appearRightLeft 1s ease-in-out;
     }
 
 }
@@ -146,10 +250,12 @@
     .inner_about{
         padding-top:50px;
         .inner_about_img{
+            animation:appearLeftRight 1s ease-in-out;
             width:100%;
             height:100%;
         }
         .inner_about_title{
+            animation:appearRightLeft 1s ease-in-out;
             padding-bottom:50px;
             h2{
                 @include headingFont(rgb(51,51,51), 30px, 800);
@@ -174,14 +280,15 @@
         }
         .inner-about-desc{
             .inner-about-point{
-            margin-top:20px;
-            .icon{
-                i{
-                    font-size:55px;
-                    color:#BABABA;
-                    margin-right:25px;
+                animation:appearDownUp 1s ease-in-out;
+                margin-top:20px;
+                .icon{
+                    i{
+                        font-size:55px;
+                        color:#BABABA;
+                        margin-right:25px;
+                    }
                 }
-            }
         .inner-about-point-text{
             h2{
                 @include headingFont(rgb(52,52,52), 20px, 800);
@@ -202,6 +309,7 @@
         padding-bottom:140px;
         background:#e4e4e4;
         .video-area-title{
+            animation: runFromLeft 2s ease-out;
             h2{
             @include headingFont(rgb(51,51,51), 30px, 800);
             line-height:37px;
@@ -223,6 +331,7 @@
             }
         }
         .video-area-button{
+            animation: runFromLeft 2s ease-out;
             a.btn-primary{
                 border: 1px solid #929292;
                 background-color:transparent;
@@ -240,6 +349,7 @@
             }
         }
         iframe{
+            animation: runFromRight 2s ease-out;
             widows: 100%;
             height:100%;
         }
@@ -327,20 +437,23 @@
             color:#f39c12;
         }
         .features-inner-left{
+            animation:appearLeftRight 1s ease-in-out;
             margin-top: 35px;        
             .icon{
                 i{
                     font-size:41px;
                     color:#f39c12;
-                    margin-left:25px;
+                    
                 }
             }
         }
         .features-inner-phone{
+            animation:bounceIn 2s ease-in-out;
             height:100%;
             width:100%;
         }
         .features-inner-right{
+            animation:appearRightLeft 1s ease-in-out;
             margin-top: 35px;
             .icon{
                 i{
@@ -357,13 +470,14 @@
         background:#1a1a1a;
         p{
             @include headingFont(#dfdfdf, 18px, 300);
+            animation:runFromLeft 1s ease-out;
         }
         .btn-warning{
             background-color: #f39c12;
             border: 1px solid #f39c12;
             border-radius: 4px;
             font-size:14px;
-            
+            animation:runFromLeft 1s ease-out;
             padding:15px 35px;
             text-transform: uppercase;
             color:#fff;
@@ -376,6 +490,7 @@
     }
     .apps-screen-page{
         .screen-slider{
+            animation: runFromRight 2s ease-out;
             padding-top: 50px;
             .owl-wrapper{
                 .owl-wrapper-item{
@@ -397,6 +512,7 @@
         padding-bottom: 120px;
         background:rgba(0,0,0,.4);
         .facts-item{
+            animation:runFromLeft 2s ease-in;
             i{
                 color:#f39c12;
                 font-size:60px;
@@ -419,9 +535,11 @@
 .download-page{
     background:#f1f1f1;
     .available_store{
+        
         background:#1a1a1a;
         padding: 75px 0;
         .available_store_text{
+            animation: runFromRight 2s ease-out;
             h2{
                 @include headingFont(#fff, 30px, 500);
             }
@@ -432,10 +550,12 @@
         i{
             color:#f39c12;
             font-size:40px;
-            
+            animation: runFromRight 2s ease-out;
         }
     }
     img{
+        animation: appearDownUp 1s ease-in;
+        
         height:100%;
         width:100%;
     }
@@ -443,7 +563,9 @@
 
 .contact-page{
     background:#f1f1f1;
+    
     .contact-form{
+        animation: bounceIn 1s ease-in-out;
         .form-control{
             height:50px;
             @include headingFont(#333, 14px, 300);
@@ -459,6 +581,7 @@
         }
     }
     .social-media{
+        animation: runFromLeft 2s ease-out;
         padding-top: 50px;
         padding-bottom: 70px;
         .social-media-list{
@@ -496,6 +619,7 @@
         background: transparent;
     }
     .subscribe-title{
+        animation:lightSpeedIn 1s ease-in;
         padding-top:90px;
         padding-bottom:50px;
         h2{
@@ -516,6 +640,7 @@
         }
     }
     .subscribe-form{
+        animation:lightSpeedIn 1s ease-in;
         .form-control{
         background: transparent;
         height:50px;
@@ -533,6 +658,7 @@
 
     }        
     .submit-btn {
+        animation:lightSpeedIn 1s ease-in;
             @include button(200px, 50px);
 }
 }
