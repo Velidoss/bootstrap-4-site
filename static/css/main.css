@@ -1,5 +1,35 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900&display=swap");
+.title {
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+
+.title h2 {
+  font-family: Raleway, sans-serif;
+  font-size: 30px;
+  color: #333;
+  font-weight: 400;
+}
+
+.title h2::after {
+  content: "";
+  display: block;
+  margin: 20px auto;
+  width: 60px;
+  height: 2px;
+  background-color: #f39c12;
+}
+
+.title p {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  color: #333;
+  font-weight: 300;
+  line-height: 28px;
+  margin-top: 45px;
+}
+
 .header {
   background: url(../images/home.jpg);
   background-size: cover;
@@ -70,9 +100,36 @@
 }
 
 .home-container div.download-btn a.btn-primary {
-  color: #f39c12;
-  background: none;
+  background-color: transparent;
   border: 1px solid #f39c12;
+  border-radius: 4px;
+  text-transform: uppercase;
+  color: #f39c12;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.home-container div.download-btn a.btn-primary:hover {
+  color: #fff;
+  background-color: #f39c12;
+}
+
+.home-container div.download-btn a.btn-secondary {
+  background-color: transparent;
+  border: 0;
+  border-radius: 4px;
+  text-transform: uppercase;
+  color: #929292;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.home-container div.download-btn a.btn-secondary i {
+  color: #f39c12;
+}
+
+.home-container div.download-btn a.btn-secondary:hover {
+  color: #fff;
 }
 
 .home-container div.download-btn a > i {
@@ -80,38 +137,7 @@
 }
 
 .home-container .home-phone img {
-  width: 262px;
-  height: 535px;
-}
-
-.title {
-  padding-top: 90px;
-  padding-bottom: 50px;
-}
-
-.title h2 {
-  font-family: Raleway, sans-serif;
-  font-size: 30px;
-  color: #333;
-  font-weight: 400;
-}
-
-.title h2::after {
-  content: "";
-  display: block;
-  margin: 20px auto;
-  width: 60px;
-  height: 2px;
-  background-color: #f39c12;
-}
-
-.title p {
-  font-family: Raleway, sans-serif;
-  font-size: 18px;
-  color: #333;
-  font-weight: 300;
-  line-height: 28px;
-  margin-top: 45px;
+  width: 100%;
 }
 
 /*About page*/
@@ -121,6 +147,11 @@
 
 .about-page .inner_about {
   padding-top: 50px;
+}
+
+.about-page .inner_about .inner_about_img {
+  width: 100%;
+  height: 100%;
 }
 
 .about-page .inner_about .inner_about_title {
@@ -216,12 +247,26 @@
   margin-top: 40px;
 }
 
-.about-page .video-area .video-area-button .btn {
+.about-page .video-area .video-area-button a.btn-primary {
   border: 1px solid #929292;
-  background: #e4e4e4;
+  background-color: transparent;
+  color: #686868;
   border-radius: 3px;
   padding: 12px 35px;
   text-transform: uppercase;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.about-page .video-area .video-area-button a.btn-primary:hover {
+  color: #fff;
+  background-color: #f39c12;
+  border-color: #f39c12;
+}
+
+.about-page .video-area iframe {
+  widows: 100%;
+  height: 100%;
 }
 
 /*Testimonial*/
@@ -338,6 +383,11 @@
   margin-left: 25px;
 }
 
+#features .features-inner .features-inner-phone {
+  height: 100%;
+  width: 100%;
+}
+
 #features .features-inner .features-inner-right {
   margin-top: 35px;
 }
@@ -358,6 +408,23 @@
   font-size: 18px;
   color: #dfdfdf;
   font-weight: 300;
+}
+
+#features .call-to-action .btn-warning {
+  background-color: #f39c12;
+  border: 1px solid #f39c12;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 15px 35px;
+  text-transform: uppercase;
+  color: #fff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#features .call-to-action .btn-warning:hover {
+  border-color: #f31270;
+  background-color: #f31270;
 }
 
 #features .apps-screen-page .screen-slider {
@@ -433,6 +500,11 @@
   font-size: 40px;
 }
 
+.download-page img {
+  height: 100%;
+  width: 100%;
+}
+
 .contact-page {
   background: #f1f1f1;
 }
@@ -460,6 +532,13 @@
   height: 50px;
   text-transform: uppercase;
   color: #f39c12;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.contact-page .contact-form .submit-btn:hover {
+  color: #fff;
+  background-color: #f39c12;
 }
 
 .contact-page .social-media {
@@ -557,9 +636,11 @@
   border: 1px solid #f39c12;
   border-radius: 4px;
   width: 200px;
-  height: 45px;
+  height: 50px;
   text-transform: uppercase;
   color: #f39c12;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .subscribe .submit-btn:hover {
