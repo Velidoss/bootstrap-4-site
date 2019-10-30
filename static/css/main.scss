@@ -1,6 +1,8 @@
 @import './_fonts';
 @import './_variables';
 @import './animations';
+@import './media';
+
 
 @mixin button($width, $height) {
     background-color: transparent;
@@ -17,7 +19,12 @@
     }
 }
 
-
+*{
+    margin:0;
+    padding:0;
+    
+    box-sizing:border-box;
+}
 
 /*Титулка почти всех блоков*/
 .title{
@@ -69,7 +76,11 @@
 
             a{
                 text-decoration:none;
-                color:rgb(181,181,181)
+                color:rgb(181,181,181);
+                &:hover{
+                    transition:1s;
+                    color:#f39c12;
+                }
             }
         }
     }
@@ -395,10 +406,15 @@
         .screen-slider{
             animation: runFromRight 2s ease-out;
             padding-top: 50px;
+            overflow: hidden;
             .owl-wrapper{
+                display:block;
+                left:0px;
                 .owl-wrapper-item{
+                    position:relative;
                     margin: 0 90px 50px 90px;
-                    img{
+                    img{ 
+                        display: block;
                         width:100%;
                         height: auto;
                     }

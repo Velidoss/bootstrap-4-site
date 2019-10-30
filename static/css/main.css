@@ -244,6 +244,19 @@
   }
 }
 
+@media (max-width: 768px) {
+  .home-phone {
+    display: none;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 /*Титулка почти всех блоков*/
 .title {
   padding-top: 90px;
@@ -301,6 +314,12 @@
 .navbar .navbar-nav li a {
   text-decoration: none;
   color: #b5b5b5;
+}
+
+.navbar .navbar-nav li a:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: #f39c12;
 }
 
 /*homepage*/
@@ -709,13 +728,21 @@
   -webkit-animation: runFromRight 2s ease-out;
           animation: runFromRight 2s ease-out;
   padding-top: 50px;
+  overflow: hidden;
+}
+
+#features .apps-screen-page .screen-slider .owl-wrapper {
+  display: block;
+  left: 0px;
 }
 
 #features .apps-screen-page .screen-slider .owl-wrapper .owl-wrapper-item {
+  position: relative;
   margin: 0 90px 50px 90px;
 }
 
 #features .apps-screen-page .screen-slider .owl-wrapper .owl-wrapper-item img {
+  display: block;
   width: 100%;
   height: auto;
 }
