@@ -10,6 +10,11 @@
         opacity:1;
     }
 }
+.animationUpDown{
+    animation:appearUpDown 1s ease-in-out;
+}
+
+
 @keyframes appearLeftRight{
     0%{
         transform:translateX(-40px);
@@ -20,7 +25,9 @@
         opacity:1;
     }
 }
-
+.animationLeftRight{
+    animation:appearLeftRight 1s ease-in-out;
+}
 @keyframes appearRightLeft{
     0%{
         transform:translateX(40px);
@@ -30,6 +37,9 @@
         transform:translateX(0);
         opacity:1;
     }
+}
+.animationRightLeft{
+    animation:appearRightLeft 1s ease-in-out;
 }
 @keyframes appearDownUp{
     0%{
@@ -41,7 +51,9 @@
         opacity:1;
     }
 }
-
+.animationDownUp{
+    animation:appearDownUp 1s ease-in-out;
+}
 @keyframes runFromLeft{
     0%{
         transform:translateX(-2000px);
@@ -51,6 +63,9 @@
         transform:translateX(0);
         opacity:1;
     }
+}
+.animationrunFromLeft{
+    animation:runFromLeft 1.5s ease-out;
 }
 @keyframes runFromRight{
     0%{
@@ -62,7 +77,9 @@
         opacity:1;
     }
 }
-
+.animationrunFromRight{
+    animation:runFromRight 1.5s ease-out;
+}
 @keyframes bounceIn{
     0%{
         opacity:0;
@@ -79,7 +96,9 @@
         transform: scale(1);
     }
 }
-
+.animationbounceIn{
+    animation:bounceIn 2s ease-in-out;
+}
 @keyframes lightSpeedIn{
     0%{
         transform: translateX(100%) skewX(-30deg);
@@ -97,4 +116,7 @@
         transform: translateX(0%) skewX(0deg);
         opacity:1;
     }
+}
+.animationlightSpeedIn{
+    animation:lightSpeedIn 2s ease-in-out;
 }
