@@ -80,6 +80,19 @@
 .animationrunFromRight{
     animation:runFromRight 1.5s ease-out;
 }
+@keyframes runFromUp{
+    0%{
+        transform:translateY(-2000px);
+        opacity: 0;
+    }
+    100%{
+        transform:translateY(0);
+        opacity:1;
+    }
+}
+.animationrunFromUp{
+    animation:runFromUp 1s ease-out;
+}
 @keyframes bounceIn{
     0%{
         opacity:0;

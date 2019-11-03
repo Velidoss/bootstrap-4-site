@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const idsAnimationDownUp = new Array('inner-about-desc-animate', 'available-store-img-animate');
     const idsAnimationRunFromLeft = new Array('video-area-title-animate', 'video-area-button-animate', 'call-to-action-text-animate', 'call-to-action-btn-warning-animate', 'facts-item-animate');
     const idsAnimationRunFromRight = new Array('you-video-animate', 'screen-slider-animate', 'available-store-text-animate', 'available-store-fab-animate', 'social-media-animate');
+    const idsAnimationRunFromUp = new Array('carousel-clients');
     const idsAnimationBounceIn = new Array('features-inner-phone-animate', 'contact-form-animate');
     const idsAnimationLightSpeedIn = new Array('subscribe-title-animate', 'subscribe-form-animate', 'subscribe-form-btn-animate');
 
@@ -95,6 +96,18 @@ document.addEventListener('DOMContentLoaded', () => {
             if (gambitGalleryIsInView(anim)) {
                 if (!anim.classList.contains('animationrunFromRight')) {
                     anim.classList.add('animationrunFromRight');
+                }
+            }
+        })
+        handler()
+        window.addEventListener('scroll', handler)
+    }
+    for (let id of idsAnimationRunFromUp) {
+        let anim = document.getElementById(id)
+        let handler = () => raf(() => {
+            if (gambitGalleryIsInView(anim)) {
+                if (!anim.classList.contains('animationrunFromUp')) {
+                    anim.classList.add('animationrunFromUp');
                 }
             }
         })
